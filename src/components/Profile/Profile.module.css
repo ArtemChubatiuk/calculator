@@ -1,0 +1,10 @@
+.prof {
+    padding-top: 10px;
+    grid-area: s;
+    height: 370px;
+    background-color: slategray;
+}
+
+.num {
+    padding: 10px;
+}
