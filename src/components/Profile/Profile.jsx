@@ -1,7 +1,12 @@
 import React from "react";
 import classes from './Profile.module.css'
 
-const Profile = () => {
+const Profile = (props) => {
+
+    let onClickB = (id) => {
+        debugger;
+        props.keyPressed(id);
+    }
 
     return (
         <div className={classes.prof}>
@@ -10,12 +15,12 @@ const Profile = () => {
                     borderRadius: 50,
                     width: 70,
                     height: 70
-                }} onClick={console.log('sdgdsgsdf')}><h1> 7 </h1></button>
+                }} onClick={onClickB(7)}><h1> 7 </h1></button>
                 <button style={{
                     borderRadius: 50,
                     width: 70,
                     height: 70
-                }}><h1> 8 </h1></button>
+                }} onClick={onClickB(8)}><h1> 8 </h1></button>
                 <button style={{
                     borderRadius: 50,
                     width: 70,

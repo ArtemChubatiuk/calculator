@@ -1,15 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from "./components/Header/Header";
 import Profile from "./components/Profile/Profile";
-import {BrowserRouter, Route} from "react-router-dom";
 import React from "react";
 
-const App = () => {
+const App = (props) => {
     return (
         <div className='app-wrapper'>
             <Header/>
-            <Profile/>
+            <Profile keyPressed={props.keyPressed}/>
         </div>
     )
 }
